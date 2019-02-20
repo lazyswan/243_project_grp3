@@ -23,7 +23,9 @@ bool C_period_reg_tlm(void) {
 
 void C_period_1Hz(uint32_t count) {
     //TX CODE
-   (void) count;
+    (void) count;
+/*
+
    static char tx_data='E';
    while(tx_data>='A'){
        uart3_putchar(tx_data,0);
@@ -31,11 +33,12 @@ void C_period_1Hz(uint32_t count) {
    }
    tx_data='E';
 
+*/
 
-   /*//RX Code:
+   //RX Code:
     char byte_rx = 0;
     uart3_getchar(&byte_rx,0);
-    setNumber(byte_rx);*/
+    setNumber(byte_rx);
  }
 
 void C_period_10Hz(uint32_t count) {

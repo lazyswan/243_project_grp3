@@ -20,7 +20,9 @@ void test_C_period_init(void) {
 
 void test_C_period_1Hz(void) {
 	//char ignore = 'S';
-	uart3_putchar_IgnoreAndReturn(true);
+	setNumber_CMockIgnore();
+	uart3_getchar_IgnoreAndReturn(true);
+	//uart3_putchar_IgnoreAndReturn(true);
 	//TEST_ASSERT_TRUE(uart3_putchar('X',0));
     //uart3_putchar_ExpectAndReturn(ignore,0,true);
 	//uart3_putchar_IgnoreArg_byte();
